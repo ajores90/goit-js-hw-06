@@ -2,13 +2,13 @@ const totalValue = document.querySelector("#value");
 
 let counterValue = 0;
 
-const Decrement = document.querySelector('button[data-action="decrement"]');
+const subEl = document.querySelector('button[data-action="decrement"]');
 
-const Increment = document.querySelector('button[data-action="increment"]');
+const addEl = document.querySelector('button[data-action="increment"]');
 
-Decrement.addEventListener("click", onBtnDecrement);
+subEl.addEventListener("click", onBtnDecrement);
 
-Increment.addEventListener("click", onBtnIncrement);
+addEl.addEventListener("click", onBtnIncrement);
 
 function onBtnDecrement() {
   counterValue -= 1;
